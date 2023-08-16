@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sameen Ahmad</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <style>
+     body {
+       font-family: 'Open Sans', Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: #111;
+       color: #fff;
+     }
+     header {
+       background-color: #000;
+       color: white;
+       text-align: center;
+       padding: 10px;
+     }
+     .tabs {
+       display: flex;
+       justify-content: center;
+       background-color: #000; /* Dark gray */
+       padding: 10px;
+       border-bottom: 1px solid #444;
+     }
+     .tab {
+       padding: 10px 20px;
+       cursor: pointer;
+       transition: background-color 0.3s, color 0.3s;
+       font-weight: 600;
+       color: #d3d1d2; /* Light gray */
+     }
+     .tab:hover {
+       background-color: #e6a6ce;
+       color: #fff;
+     }
+     .content {
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 20px;
+       background-color: #222;
+       border: 1px solid #444;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+     .hidden {
+       display: none;
+     }
+     .project-description {
+       margin-top: 15px;
+     }
+     .project-link {
+       color: #007bff;
+       text-decoration: none;
+     }
+     .project-link:hover {
+       text-decoration: underline;
+     }
+     .linkedin-link {
+       color: #97c8fc;
+       text-decoration: none;
+     }
+     .linkedin-link:hover {
+       text-decoration: underline;
+     }
+   </style>
+ </head>
+ <body>
+   <header>
+     <h1>Sameen's Other Projects</h1>
+   </header>
+   <div class="tabs">
+     <div class="tab" onclick="showContent('aboutMe')">Projects</div>
+     <div class="tab" onclick="showContent('proj1')">University System</div>
+     <div class="tab" onclick="showContent('proj2')">Outreach Program</div>
+     <div class="tab" onclick="showContent('proj3')">Employment Disparities</div>
+   </div>
+   <div class="content" id="aboutMeContent">
+     <h2>Projects</h2>
+     <p>Select the projects to delve deeper into their details. The code is redacted due to the inclusion of sensitive information such as credentials and API keys within the code files.</p>
+     <p>Connect with me on <a class="linkedin-link" href="https://www.linkedin.com/in/sameenahmad/">LinkedIn</a> to learn more about me!</p>
+   </div>
+
+   <div class="content hidden" id="proj1Content">
+     <h2>University Application, Course Registration, and Advising System</h2>
+     <p>An innovative and comprehensive university management system was created using Python in conjunction with the versatile Flask framework. This powerful combination was further strengthened by the integration of a robust MySQL Database, ensuring the secure storage and retrieval of data, while the utilization of the Amazon RDS Database service contributed to its scalability and high-performance capabilities. The resulting system represents a model of technological integration aimed at revolutionizing the way universities handle their operations.</p>
+     <p>One of the features of this advanced system is its University Application component. This component empowers prospective students to seamlessly apply to various programs offered by the university. Through a user-friendly interface, applicants can provide their information, upload essential documents, and track their application status, thereby simplifying a once-complex process. With this, the Course Registration component facilitates effortless enrollment in courses, allowing students to view available courses, check schedules, and secure their spots — all in real-time. </p>
+    <p>Navigating the complex landscape of academic advising is made notably smoother through the system's Advising functionality. Students can view their advisors and access relevant academic information. Such a comprehensive approach to advising ensures that students make informed decisions, aligning their academic journey with their career aspirations. Beyond benefiting students, the university management system profoundly enhances administrative efficiency. Faculty members can conveniently manage their course materials, grades, and communicate with students, all within a unified platform. </p>
+    <p>In conclusion, the use of Python, Flask, MySQL, and Amazon RDS has given rise to a university management system that outperforms traditional paradigms. Its multifaceted features, from simplified application procedures to intelligent course advising, not only empower students but also transform administrative operations.</p>
+    <p> Note: The code is redacted due to the inclusion of sensitive information.</p>
+  </div>
+
+   <div class="content hidden" id="proj2Content">
+     <h2>Prioritizing School Support Outreach Program</h2>
+     <p>My role encompasses a diverse range of responsibilities aimed at contributing to the development and testing of innovative curricula. It is worth mentioning that the inception of this project can be attributed to the visionary thinking of the lab's initial doctoral student. This individual recognized the potential in leveraging the data collected from schools, focusing on specific demographic criteria, and sought to create a program capable of effectively searching and filtering through this data. The ultimate objective was to provide pertinent information to government agencies and non-profit organizations, enabling them to identify schools that align with their interests and establish collaborative partnerships with these educational institutions and their students. </p>
+
+     <p> Unfortunately, progress on this promising initiative was hindered. It was at this juncture that I encountered this project and felt compelled to assume a leadership role, taking the responsibility to propel it forward and actualize the shared goals of the lab and myself. The lab diligently collects a substantial volume of records on an annual basis, amassing a vast wealth of data pertaining to regional schools and school divisions. These invaluable datasets are currently stored and maintained in the lab database. </p>
+      
+     <p> My primary objective revolves around the creation of a sophisticated program that seamlessly integrates with the existing data infrastructure and fully realizes the aspirations of the lab and myself. The program that I created encompasses the ability to efficiently search and filter through the collected data, ensuring compatibility with the preferences and interests of government agencies and non-profit organizations. By implementing this comprehensive solution, we aim to facilitate meaningful connections between these entities and the schools that best align with their missions and objectives. </p>
+      
+     <p> Note: The code is redacted due to the inclusion of sensitive information such as credentials and API keys within the code files.</p>
+   </div>
+
+   <div class="content hidden" id="proj3Content">
+     <h2>A Data-Driven Exploration of Employment Disparities in Technical Careers and College Majors</h2>
+     <p>During my internship at Virginia Tech - Qualcomm Lab, I worked on a project that analyzed publicly available data to measure employment gaps in various technical (STEM) careers and college majors by ethnicity, sex, and socio-economic status. The focal point of this project was to gather valuable insights from the Institute of Education Sciences: National Center for Education Statistics, a branch of the U.S. Department of Education. By extracting data, I meticulously segregated it into distinct categories for effective analysis. These categories encompassed a wide range of dimensions, including US Higher Education Data, International Data, Educational Attainment/Degrees, Majors, Historically Black Colleges and Universities, and Employment Rates. </p>
+
+      <p>To streamline the examination process, I took the additional step of breaking down the data into specific fields, carefully curating them to align with key STEM disciplines. These disciplines encompassed health and medical sciences, environmental studies, biological and life sciences, computer science and data science, engineering, and physical sciences. Each of these fields represented a crucial aspect of the overarching investigation. Within each category, I identified three pivotal variables: ethnicity/race, sex, and socio-economic status. By thoroughly examining these variables, I sought to gain a comprehensive understanding of the disparities and gaps present within various technical careers and college majors. This extensive data curation process was essential in ensuring accurate and relevant results. To facilitate user interaction with the curated data, I developed a sophisticated program that allowed individuals to select and customize their preferences. The output of this program provided users with precisely tailored results, aligning with their specific inputs. Ultimately, this project aimed to shed light on employment gaps in STEM fields, offering valuable insights to inform policy decisions and drive positive change.</p>
+      
+     <p>Note: The code is redacted due to the inclusion of sensitive information such as credentials and API keys within the code files.</p>
+   </div>
+ 
+   <script>
+     function showContent(contentId) {
+       const contents = document.querySelectorAll('.content');
+       contents.forEach(content => {
+         content.classList.add('hidden');
+       });
+ 
+       const selectedContent = document.getElementById(contentId + 'Content');
+       if (selectedContent) {
+         selectedContent.classList.remove('hidden');
+       }
+     }
+   </script>
+ </body>
+ </html> 
